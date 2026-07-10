@@ -2,7 +2,8 @@
 
 @theme {
   --color-bg: #F2F2F2;
-  --color-accent: #8B5CF6;
+  --color-accent: #1B6EF3;
+  --color-green: #B4F32B;
   --color-text: #111111;
   --color-muted: #888888;
   --color-border: #E5E5E5;
@@ -37,13 +38,13 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background: #8B5CF6;
+  background: #1B6EF3;
   color: #fff;
 }
 
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: #F2F2F2; }
-::-webkit-scrollbar-thumb { background: #8B5CF6; border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: #1B6EF3; border-radius: 2px; }
 
 /* ── Cover image hover ── */
 .cover-link:hover .cover-overlay {
@@ -67,8 +68,18 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 
 /* ── Hero responsive ── */
+@media (max-width: 900px) {
+  .hero-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .hero-visual {
+    min-height: 360px !important;
+    order: -1;
+  }
+}
 @media (max-width: 768px) {
-  .hero-stats-grid {
+  .hero-mini-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }

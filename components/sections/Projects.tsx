@@ -63,7 +63,7 @@ export default function Projects() {
                 {/* Левая: мета + заголовок + описание + теги */}
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                    <span style={{ fontSize: '12px', color: '#8B5CF6', fontWeight: 500 }}>{project.category}</span>
+                    <span style={{ fontSize: '12px', color: '#1B6EF3', fontWeight: 500 }}>{project.category}</span>
                     <span style={{ color: '#333', fontSize: '12px' }}>·</span>
                     <span style={{ fontSize: '12px', color: '#888' }}>{project.year}</span>
                   </div>
@@ -87,7 +87,7 @@ export default function Projects() {
                   <div className="project-stats-col" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', flexShrink: 0, marginLeft: '32px' }}>
                     {project.stats.map((s, si) => (
                       <div key={si} style={{ textAlign: 'right' }}>
-                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#8B5CF6', lineHeight: 1 }}>
+                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#1B6EF3', lineHeight: 1 }}>
                           <Counter value={s.value} />
                         </div>
                         <div style={{ fontSize: '11px', color: '#AAA', marginTop: '2px' }}>{s.label}</div>

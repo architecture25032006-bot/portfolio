@@ -4,36 +4,38 @@ import { motion } from 'framer-motion'
 
 const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
-// Цветные bento-карточки в стиле референса
+// Карточки в стиле референса: метка-категория сверху, заголовок, «Подробнее»
 const services = [
   {
-    num: '01',
+    cat: 'Этап 01',
     title: 'Хуки и сценарии',
-    description: 'Пишу цепляющие хуки под твою нишу. Первые 2 секунды решают всё — именно здесь большинство теряет аудиторию.',
-    tags: ['Хуки', 'Сценарий', 'Нарратив'],
-    bg: '#111', fg: '#fff', sub: '#999', tagBorder: '#333', tagColor: '#bbb', numColor: '#8B5CF6',
+    description: 'Цепляющие хуки под твою нишу. Первые 2 секунды решают всё.',
+    bg: '#111', fg: '#fff', sub: '#999', catColor: '#B4F32B', link: '#fff',
   },
   {
-    num: '02',
+    cat: 'Этап 02',
     title: 'Монтаж и субтитры',
-    description: 'Быстрый ритмичный монтаж без лишнего. Субтитры, врезки, динамика — то, что держит зрителя до конца.',
-    tags: ['Монтаж', 'Субтитры', 'Досмотр'],
-    bg: '#fff', fg: '#111', sub: '#888', tagBorder: '#E5E5E5', tagColor: '#999', numColor: '#8B5CF6',
+    description: 'Ритмичный монтаж, субтитры и динамика, которые держат до конца.',
+    bg: '#fff', fg: '#111', sub: '#888', catColor: '#1B6EF3', link: '#1B6EF3',
   },
   {
-    num: '03',
+    cat: 'Этап 03',
     title: 'Стратегия роста',
-    description: 'Анализирую нишу, конкурентов и аудиторию. Выстраиваю контент-план, который системно тянет подписчиков и заявки.',
-    tags: ['Аналитика', 'Контент-план', 'Рост'],
-    bg: '#8B5CF6', fg: '#fff', sub: 'rgba(255,255,255,0.8)', tagBorder: 'rgba(255,255,255,0.3)', tagColor: '#fff', numColor: '#fff',
+    description: 'Анализ ниши и конкурентов, контент-план, который тянет заявки.',
+    bg: '#1B6EF3', fg: '#fff', sub: 'rgba(255,255,255,0.85)', catColor: '#B4F32B', link: '#fff',
   },
   {
-    num: '04',
+    cat: 'Этап 04',
     title: 'A/B тест форматов',
-    description: 'Тестирую хуки, форматы и подачу параллельно. Оставляю то, что работает — отсекаю всё лишнее. Данные, а не догадки.',
-    tags: ['Тесты', 'Оптимизация', 'CTR'],
-    bg: '#C9F31D', fg: '#111', sub: '#4a5a00', tagBorder: 'rgba(0,0,0,0.15)', tagColor: '#3a4700', numColor: '#111',
+    description: 'Тестирую хуки и форматы параллельно. Данные, а не догадки.',
+    bg: '#B4F32B', fg: '#111', sub: '#3a4700', catColor: '#111', link: '#111',
   },
+]
+
+const socials = [
+  { label: 'TG', href: 'https://t.me/ir6eas3' },
+  { label: 'YT', href: 'https://www.youtube.com/@ir6east' },
+  { label: 'IG', href: 'https://t.me/ir6eas3work' },
 ]
 
 export default function Services() {
@@ -42,58 +44,66 @@ export default function Services() {
       id="services"
       style={{ background: '#F2F2F2', borderTop: '1px solid #E5E5E5', padding: '100px 40px' }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 
-        {/* Заголовок */}
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '48px', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <p style={{ fontSize: '11px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '10px' }}>
-              Услуги
-            </p>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111', lineHeight: 1.05 }}>
-              Что я делаю
+        {/* Шапка секции: заголовок + описание слева, соц-иконки справа */}
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '48px', flexWrap: 'wrap', gap: '24px' }}>
+          <div style={{ maxWidth: '620px' }}>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.4rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111', lineHeight: 1.05, marginBottom: '16px' }}>
+              Что я делаю с твоим контентом
             </h2>
+            <p style={{ color: '#888', fontSize: '15px', lineHeight: 1.6, maxWidth: '480px' }}>
+              Полный цикл: от идеи и хука до публикации и аналитики. Ты занимаешься бизнесом — я контентом.
+            </p>
           </div>
-          <a href="https://t.me/m/HngAbPHEODZi" target="_blank" rel="noopener noreferrer"
-            style={{ fontSize: '14px', color: '#888', textDecoration: 'none', whiteSpace: 'nowrap' }}>
-            Обсудить проект →
-          </a>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {socials.map(s => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                style={{
+                  width: '42px', height: '42px', borderRadius: '50%',
+                  border: '1px solid #E0E0E0', background: '#fff',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '12px', fontWeight: 700, color: '#555', textDecoration: 'none',
+                }}>
+                {s.label}
+              </a>
+            ))}
+          </div>
         </div>
 
-        {/* Bento-карточки */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }} className="services-grid">
+        {/* Сетка карточек */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '14px' }} className="services-grid">
           {services.map((s, i) => (
             <motion.div
-              key={s.num}
+              key={s.cat}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, ease, delay: i * 0.08 }}
               style={{
-                padding: '40px',
+                padding: '28px',
                 borderRadius: '20px',
                 background: s.bg,
                 border: s.bg === '#fff' ? '1px solid #E5E5E5' : 'none',
+                minHeight: '260px',
+                display: 'flex',
+                flexDirection: 'column',
               }}
             >
-              <div style={{ fontFamily: 'var(--font-heading)', fontSize: '13px', color: s.numColor, letterSpacing: '2px', marginBottom: '20px', fontWeight: 700 }}>
-                {s.num}
+              <div style={{ fontSize: '11px', color: s.catColor, letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '20px' }}>
+                {s.cat}
               </div>
 
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', fontWeight: 900, color: s.fg, letterSpacing: '-0.01em', marginBottom: '14px', lineHeight: 1.2 }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.35rem', fontWeight: 900, color: s.fg, letterSpacing: '-0.01em', marginBottom: '12px', lineHeight: 1.15 }}>
                 {s.title}
               </h3>
 
-              <p style={{ fontSize: '14px', color: s.sub, lineHeight: 1.7, marginBottom: '24px' }}>
+              <p style={{ fontSize: '13.5px', color: s.sub, lineHeight: 1.6, flex: 1 }}>
                 {s.description}
               </p>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                {s.tags.map(tag => (
-                  <span key={tag} style={{ padding: '5px 12px', borderRadius: '999px', border: `1px solid ${s.tagBorder}`, fontSize: '11px', color: s.tagColor }}>
-                    {tag}
-                  </span>
-                ))}
+              <div style={{ fontSize: '13px', fontWeight: 700, color: s.link, marginTop: '20px' }}>
+                Подробнее →
               </div>
             </motion.div>
           ))}

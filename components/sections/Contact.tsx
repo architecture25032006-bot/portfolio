@@ -22,7 +22,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.4 }}
-          style={{ fontSize: '11px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '16px' }}
+          style={{ fontSize: '11px', color: '#1B6EF3', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '16px' }}
         >
           Сотрудничество
         </motion.p>
@@ -43,7 +43,7 @@ export default function Contact() {
           }}
         >
           Готов выжать<br />
-          <span style={{ color: '#8B5CF6' }}>максимум?</span>
+          <span style={{ color: '#1B6EF3' }}>максимум?</span>
         </motion.h2>
 
         <motion.p
@@ -67,13 +67,13 @@ export default function Contact() {
           style={{
             display: 'inline-block',
             padding: '18px 48px',
-            background: '#8B5CF6',
+            background: '#1B6EF3',
             color: '#fff',
             borderRadius: '999px',
             fontSize: '16px',
             fontWeight: 700,
             textDecoration: 'none',
-            boxShadow: '0 0 60px rgba(139,92,246,0.4)',
+            boxShadow: '0 0 60px rgba(27,110,243,0.4)',
             transition: 'opacity 0.2s',
           }}
           onMouseEnter={e => (e.currentTarget.style.opacity = '0.85')}
