@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Montserrat, Manrope } from 'next/font/google'
 import './globals.css'
 import SmoothScroll from '@/components/providers/SmoothScroll'
-import NoiseOverlay from '@/components/ui/NoiseOverlay'
 import GridOverlay from '@/components/ui/GridOverlay'
 
 // Заголовки — тяжёлый, impactful
@@ -22,16 +21,15 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'malyshproduction — Медиа-продюсер',
-  description: 'Продающий контент под ключ. Выжимаю максимум продаж из твоего контента.',
+  title: 'MalyshProduction — Reels-продюсер',
+  description: 'Reels-продюсинг для экспертов и брендов. Контент, который приводит клиентов, а не просто набирает просмотры.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" className={`${montserrat.variable} ${manrope.variable}`}>
-      <body className="bg-[#0A0A0A] text-[#F0F0F0] antialiased overflow-x-hidden">
+      <body className="bg-[#F2F2F2] text-[#111111] antialiased overflow-x-hidden">
         <SmoothScroll>
-          <NoiseOverlay />
           <GridOverlay />
           {children}
         </SmoothScroll>

@@ -71,16 +71,6 @@ html.lenis, html.lenis body { height: auto; }
   .hero-stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .hero-stats-grid > div:nth-child(2) {
-    border-right: none !important;
-  }
-  .hero-stats-grid > div:nth-child(3) {
-    border-right: 1px solid #E5E5E5 !important;
-    border-top: 1px solid #E5E5E5 !important;
-  }
-  .hero-stats-grid > div:nth-child(4) {
-    border-top: 1px solid #E5E5E5 !important;
-  }
 }
 
 /* ── Offer responsive ── */

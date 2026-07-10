@@ -23,9 +23,7 @@ export default function BigClaim({ children, accent, align = 'center' }: Props) 
     <section
       ref={ref}
       style={{
-        background: '#0A0A0A',
-        borderTop: '1px solid #141414',
-        borderBottom: '1px solid #141414',
+        background: '#111',
         padding: '120px 0',
         overflow: 'hidden',
         position: 'relative',

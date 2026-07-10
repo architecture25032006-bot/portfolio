@@ -30,9 +30,7 @@ export default function Marquee({
       style={{
         width: '100%',
         overflow: 'hidden',
-        background: '#0A0A0A',
-        borderTop: '1px solid #141414',
-        borderBottom: '1px solid #141414',
+        background: '#111',
         padding: paddings[size],
       }}
     >
@@ -53,7 +51,7 @@ export default function Marquee({
               fontSize: fontSizes[size],
               fontWeight: 900,
               letterSpacing: '-0.02em',
-              color: accent && i % 2 === 1 ? '#8B5CF6' : '#F0F0F0',
+              color: accent && i % 2 === 1 ? '#8B5CF6' : '#F5F5F5',
               whiteSpace: 'nowrap',
               display: 'inline-flex',
               alignItems: 'center',

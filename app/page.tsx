@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main style={{ background: '#0A0A0A' }}>
+      <main style={{ background: '#F2F2F2' }}>
         <Hero />
 
         <Marquee

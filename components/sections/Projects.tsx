@@ -157,7 +157,7 @@ export default function Projects() {
                           background: 'rgba(0,0,0,0)', transition: 'background 0.3s', pointerEvents: 'none',
                         }} className="cover-overlay">
                           <span style={{
-                            background: '#fff', color: '#F2F2F2', borderRadius: '999px',
+                            background: '#111', color: '#fff', borderRadius: '999px',
                             padding: '10px 24px', fontWeight: 700, fontSize: '14px',
                             opacity: 0, transition: 'opacity 0.3s', fontFamily: 'var(--font-heading)',
                           }} className="cover-btn">
