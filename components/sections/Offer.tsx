@@ -1,0 +1,243 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import MagneticButton from '@/components/ui/MagneticButton'
+
+const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
+
+const trialFeatures = [
+  'Анализ ниши и конкурентов',
+  'Хуки под твою аудиторию',
+  'Сценарии + минимальный монтаж',
+  'Субтитры и оформление',
+  'Аналитика после публикации',
+]
+
+const longFeatures = [
+  'Всё из стартового пакета',
+  'Контент-план на каждый месяц',
+  'A/B тест хуков и форматов',
+  'Еженедельные отчёты',
+  'Постоянная коммуникация',
+]
+
+export default function Offer() {
+  return (
+    <section
+      id="offer"
+      style={{
+        background: '#0A0A0A',
+        borderTop: '1px solid #141414',
+        padding: '100px 40px',
+      }}
+    >
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease }}
+          style={{ marginBottom: '64px', textAlign: 'center' }}
+        >
+          <p style={{ fontSize: '11px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 500, marginBottom: '10px' }}>
+            Форматы работы
+          </p>
+          <h2 style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+            fontWeight: 900,
+            letterSpacing: '-0.02em',
+            color: '#fff',
+            lineHeight: 1.05,
+          }}>
+            С чего начать
+          </h2>
+        </motion.div>
+
+        <div className="offer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+
+          {/* Пробный пакет */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5, ease }}
+            style={{
+              padding: '48px',
+              borderRadius: '20px',
+              border: '1px solid #1E1E1E',
+              background: '#0d0d0d',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div style={{
+              display: 'inline-block',
+              padding: '4px 12px',
+              borderRadius: '999px',
+              border: '1px solid #2a2a2a',
+              fontSize: '10px',
+              color: '#555',
+              letterSpacing: '2px',
+              textTransform: 'uppercase',
+              marginBottom: '36px',
+              width: 'fit-content',
+              fontWeight: 600,
+            }}>
+              Старт
+            </div>
+
+            <div style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(3rem, 5vw, 5rem)',
+              fontWeight: 900,
+              color: '#fff',
+              lineHeight: 1,
+              marginBottom: '4px',
+            }}>
+              5
+            </div>
+            <div style={{ fontSize: '17px', fontWeight: 700, color: '#555', marginBottom: '24px' }}>
+              рилсов — пробный пакет
+            </div>
+
+            <p style={{ color: '#555', fontSize: '14px', lineHeight: 1.7, marginBottom: '32px', flex: 1 }}>
+              Попробуй без риска. Получи 5 готовых рилсов — увидишь
+              механику изнутри до решения о долгосроке.
+            </p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '40px' }}>
+              {trialFeatures.map(item => (
+                <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#666' }}>
+                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#333', flexShrink: 0 }} />
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <MagneticButton
+              href="https://t.me/m/HngAbPHEODZi"
+              target="_blank"
+              rel="noopener noreferrer"
+              strength={0.3}
+              style={{
+                padding: '14px 28px',
+                border: '1px solid #2a2a2a',
+                color: '#888',
+                borderRadius: '999px',
+                fontSize: '14px',
+                fontWeight: 600,
+                textDecoration: 'none',
+                textAlign: 'center' as const,
+                background: 'rgba(13,13,13,0.6)',
+                backdropFilter: 'blur(8px)',
+              }}
+            >
+              Узнать стоимость →
+            </MagneticButton>
+          </motion.div>
+
+          {/* Долгосрок */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5, ease, delay: 0.1 }}
+            style={{
+              padding: '48px',
+              borderRadius: '20px',
+              border: '1px solid rgba(139,92,246,0.4)',
+              background: 'linear-gradient(135deg, rgba(139,92,246,0.07) 0%, rgba(139,92,246,0.02) 100%)',
+              display: 'flex',
+              flexDirection: 'column',
+              position: 'relative',
+              overflow: 'hidden',
+            }}
+          >
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              padding: '5px 12px',
+              borderRadius: '999px',
+              background: '#8B5CF6',
+              fontSize: '10px',
+              fontWeight: 700,
+              color: '#fff',
+              letterSpacing: '1.5px',
+              textTransform: 'uppercase',
+            }}>
+              Популярно
+            </div>
+
+            <div style={{
+              display: 'inline-block',
+              padding: '4px 12px',
+              borderRadius: '999px',
+              border: '1px solid rgba(139,92,246,0.3)',
+              fontSize: '10px',
+              color: '#8B5CF6',
+              letterSpacing: '2px',
+              textTransform: 'uppercase',
+              marginBottom: '36px',
+              width: 'fit-content',
+              fontWeight: 600,
+            }}>
+              Долгосрок
+            </div>
+
+            <div style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(2.2rem, 4vw, 4rem)',
+              fontWeight: 900,
+              color: '#fff',
+              lineHeight: 1,
+              marginBottom: '4px',
+            }}>
+              15–20
+            </div>
+            <div style={{ fontSize: '17px', fontWeight: 700, color: '#9d8cff', marginBottom: '24px' }}>
+              рилсов в месяц
+            </div>
+
+            <p style={{ color: '#666', fontSize: '14px', lineHeight: 1.7, marginBottom: '32px', flex: 1 }}>
+              Системный рост аккаунта от 3 месяцев. Именно столько
+              нужно алгоритму, чтобы начать тебя продвигать стабильно.
+            </p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '40px' }}>
+              {longFeatures.map(item => (
+                <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#888' }}>
+                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#8B5CF6', flexShrink: 0 }} />
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <MagneticButton
+              href="https://t.me/m/HngAbPHEODZi"
+              target="_blank"
+              rel="noopener noreferrer"
+              strength={0.4}
+              style={{
+                padding: '14px 28px',
+                background: '#8B5CF6',
+                color: '#fff',
+                borderRadius: '999px',
+                fontSize: '14px',
+                fontWeight: 700,
+                textDecoration: 'none',
+                textAlign: 'center' as const,
+                boxShadow: '0 0 40px rgba(139,92,246,0.35)',
+              }}
+            >
+              Начать →
+            </MagneticButton>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
