@@ -24,14 +24,14 @@ export default function Projects() {
     <>
     <section
       id="projects"
-      style={{ background: '#0A0A0A', borderTop: '1px solid #141414', padding: '80px 40px' }}
+      style={{ background: '#F2F2F2', borderTop: '1px solid #E5E5E5', padding: '80px 40px' }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
         {/* Заголовок */}
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '40px' }}>
           <div>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#fff' }}>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111' }}>
               Кейсы &amp; результаты
             </h2>
           </div>
@@ -39,7 +39,7 @@ export default function Projects() {
             href="https://t.me/ir6eas3work"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontSize: '14px', color: '#555', textDecoration: 'none' }}
+            style={{ fontSize: '14px', color: '#AAA', textDecoration: 'none' }}
           >
             Все кейсы в TG →
           </a>
@@ -55,7 +55,7 @@ export default function Projects() {
               viewport={{ once: true, amount: 0.05 }}
               transition={{ duration: 0.5, ease, delay: i * 0.08 }}
               data-cursor="view"
-              style={{ borderRadius: '16px', border: '1px solid #1A1A1A', background: '#0d0d0d', overflow: 'hidden' }}
+              style={{ borderRadius: '16px', border: '1px solid #E5E5E5', background: '#fff', overflow: 'hidden' }}
             >
               {/* Верх: текст + статы */}
               <div className="project-card-top" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '24px', padding: '32px' }}>
@@ -63,19 +63,19 @@ export default function Projects() {
                 {/* Левая: мета + заголовок + описание + теги */}
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                    <span style={{ fontSize: '12px', color: '#6C63FF', fontWeight: 500 }}>{project.category}</span>
+                    <span style={{ fontSize: '12px', color: '#8B5CF6', fontWeight: 500 }}>{project.category}</span>
                     <span style={{ color: '#333', fontSize: '12px' }}>·</span>
-                    <span style={{ fontSize: '12px', color: '#444' }}>{project.year}</span>
+                    <span style={{ fontSize: '12px', color: '#888' }}>{project.year}</span>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', fontWeight: 900, color: '#fff', marginBottom: '8px', lineHeight: 1.2 }}>
+                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', fontWeight: 900, color: '#111', marginBottom: '8px', lineHeight: 1.2 }}>
                     {project.title}
                   </h3>
-                  <p style={{ color: '#666', fontSize: '14px', lineHeight: 1.6, marginBottom: '16px' }}>
+                  <p style={{ color: '#999', fontSize: '14px', lineHeight: 1.6, marginBottom: '16px' }}>
                     {project.description}
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                     {project.tags.map((tag) => (
-                      <span key={tag} style={{ padding: '4px 10px', borderRadius: '999px', border: '1px solid #222', fontSize: '12px', color: '#555' }}>
+                      <span key={tag} style={{ padding: '4px 10px', borderRadius: '999px', border: '1px solid #E5E5E5', fontSize: '12px', color: '#AAA' }}>
                         {tag}
                       </span>
                     ))}
@@ -87,10 +87,10 @@ export default function Projects() {
                   <div className="project-stats-col" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', flexShrink: 0, marginLeft: '32px' }}>
                     {project.stats.map((s, si) => (
                       <div key={si} style={{ textAlign: 'right' }}>
-                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#6C63FF', lineHeight: 1 }}>
+                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#8B5CF6', lineHeight: 1 }}>
                           <Counter value={s.value} />
                         </div>
-                        <div style={{ fontSize: '11px', color: '#555', marginTop: '2px' }}>{s.label}</div>
+                        <div style={{ fontSize: '11px', color: '#AAA', marginTop: '2px' }}>{s.label}</div>
                       </div>
                     ))}
                   </div>
@@ -99,7 +99,7 @@ export default function Projects() {
 
               {/* Галерея изображений */}
               {project.galleryImages && project.galleryImages.length > 0 ? (
-                <div style={{ borderTop: '1px solid #1A1A1A', background: '#0d0d0d', padding: '20px 24px' }}>
+                <div style={{ borderTop: '1px solid #E5E5E5', background: '#fff', padding: '20px 24px' }}>
                   {/* Сетка: 3 в ряд, портретные */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
                     {project.galleryImages.map((src, idx) => (
@@ -131,7 +131,7 @@ export default function Projects() {
                   const imgBlock = (
                     <div
                       style={{
-                        borderTop: '1px solid #1A1A1A',
+                        borderTop: '1px solid #E5E5E5',
                         background: '#111',
                         position: 'relative',
                         width: '100%',
@@ -157,7 +157,7 @@ export default function Projects() {
                           background: 'rgba(0,0,0,0)', transition: 'background 0.3s', pointerEvents: 'none',
                         }} className="cover-overlay">
                           <span style={{
-                            background: '#fff', color: '#0A0A0A', borderRadius: '999px',
+                            background: '#fff', color: '#F2F2F2', borderRadius: '999px',
                             padding: '10px 24px', fontWeight: 700, fontSize: '14px',
                             opacity: 0, transition: 'opacity 0.3s', fontFamily: 'var(--font-heading)',
                           }} className="cover-btn">

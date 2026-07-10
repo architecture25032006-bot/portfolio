@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0A0A0A;
+  --color-bg: #F2F2F2;
   --color-accent: #8B5CF6;
-  --color-text: #F0F0F0;
-  --color-muted: #777777;
-  --color-border: #1E1E1E;
-  /* Шрифты */
+  --color-text: #111111;
+  --color-muted: #888888;
+  --color-border: #E5E5E5;
   --font-heading: var(--font-heading), system-ui, sans-serif;
   --font-body: var(--font-body), system-ui, sans-serif;
   --font-sans: var(--font-body), system-ui, sans-serif;
@@ -19,14 +18,14 @@
 }
 
 html {
-  background: #0A0A0A;
-  color: #F0F0F0;
+  background: #F2F2F2;
+  color: #111111;
   scroll-behavior: auto;
 }
 
 body {
-  background: #0A0A0A;
-  color: #F0F0F0;
+  background: #F2F2F2;
+  color: #111111;
   font-family: var(--font-body), system-ui, sans-serif;
   overflow-x: hidden;
   line-height: 1.6;
@@ -37,17 +36,16 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 
-
 ::selection {
   background: #8B5CF6;
   color: #fff;
 }
 
 ::-webkit-scrollbar { width: 3px; }
-::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-track { background: #F2F2F2; }
 ::-webkit-scrollbar-thumb { background: #8B5CF6; border-radius: 2px; }
 
-/* ── Cover image hover (YouTube link) ── */
+/* ── Cover image hover ── */
 .cover-link:hover .cover-overlay {
   background: rgba(0, 0, 0, 0.45) !important;
 }
@@ -56,7 +54,7 @@ h1, h2, h3, h4 {
   pointer-events: none;
 }
 
-/* ── Nav responsive ── */
+/* ── Nav ── */
 .nav-desktop { display: flex; }
 .nav-burger  { display: none; }
 @media (max-width: 768px) {
@@ -68,30 +66,8 @@ h1, h2, h3, h4 {
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 
-/* ── Мобильная адаптация Hero ── */
+/* ── Hero responsive ── */
 @media (max-width: 768px) {
-  .hero-main-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .hero-photo-col {
-    min-height: 85vw !important;
-    height: 85vw !important;
-  }
-  /* Виньетка снизу фото — плавный переход в текст */
-  .hero-photo-col::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 35%;
-    background: linear-gradient(to top, #0A0A0A 0%, rgba(10,10,10,0.5) 50%, transparent 100%);
-    pointer-events: none;
-    z-index: 2;
-  }
-  .hero-text-col {
-    padding: 2.5rem 1.5rem 2rem !important;
-  }
   .hero-stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -99,33 +75,29 @@ html.lenis, html.lenis body { height: auto; }
     border-right: none !important;
   }
   .hero-stats-grid > div:nth-child(3) {
-    border-right: 1px solid #181818 !important;
-    border-top: 1px solid #181818 !important;
+    border-right: 1px solid #E5E5E5 !important;
+    border-top: 1px solid #E5E5E5 !important;
   }
   .hero-stats-grid > div:nth-child(4) {
-    border-top: 1px solid #181818 !important;
+    border-top: 1px solid #E5E5E5 !important;
   }
 }
 
-/* ── Мобильная адаптация Offer ── */
+/* ── Offer responsive ── */
 @media (max-width: 768px) {
   .offer-grid {
     grid-template-columns: 1fr !important;
   }
 }
 
-/* ── Мобильная адаптация Results ── */
+/* ── Services responsive ── */
 @media (max-width: 768px) {
-  .results-main-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  .best-reel-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 16px !important;
+  .services-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
-/* ── Мобильная адаптация Projects ── */
+/* ── Projects responsive ── */
 @media (max-width: 768px) {
   .project-card-top {
     flex-direction: column !important;
@@ -141,29 +113,21 @@ html.lenis, html.lenis body { height: auto; }
   }
 }
 
-/* ── Мобильная адаптация Services ── */
+/* ── Results responsive ── */
 @media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr !important;
+  .results-main-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .best-reel-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
   }
 }
 
-/* ── Мобильная адаптация Story ── */
+/* ── Story/mobile ── */
 @media (max-width: 768px) {
-  .story-row {
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-  }
   .story-main-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
-  }
-}
-
-/* ── Мобильная адаптация Contact CTA bar ── */
-@media (max-width: 768px) {
-  .contact-cta-row {
-    flex-direction: column !important;
-    align-items: flex-start !important;
   }
 }

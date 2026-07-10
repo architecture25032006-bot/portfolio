@@ -48,7 +48,7 @@ export default function BigClaim({ children, accent, align = 'center' }: Props) 
       >
         {children}
         {accent && (
-          <div style={{ color: '#6C63FF' }}>{accent}</div>
+          <div style={{ color: '#8B5CF6' }}>{accent}</div>
         )}
       </motion.div>
     </section>
