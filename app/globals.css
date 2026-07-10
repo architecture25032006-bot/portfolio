@@ -46,6 +46,9 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track { background: #F2F2F2; }
 ::-webkit-scrollbar-thumb { background: #1B6EF3; border-radius: 2px; }
 
+/* ── Service card «Подробнее» hover ── */
+.service-more:hover .service-arrow { transform: translateX(4px); }
+
 /* ── Cover image hover ── */
 .cover-link:hover .cover-overlay {
   background: rgba(0, 0, 0, 0.45) !important;
@@ -87,6 +90,9 @@ html.lenis, html.lenis body { height: auto; }
 /* ── Offer responsive ── */
 @media (max-width: 768px) {
   .offer-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .offer-includes {
     grid-template-columns: 1fr !important;
   }
 }

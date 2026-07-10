@@ -102,9 +102,15 @@ export default function Services() {
                 {s.description}
               </p>
 
-              <div style={{ fontSize: '13px', fontWeight: 700, color: s.link, marginTop: '20px' }}>
-                Подробнее →
-              </div>
+              <a
+                href="https://t.me/m/HngAbPHEODZi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="service-more"
+                style={{ fontSize: '13px', fontWeight: 700, color: s.link, marginTop: '20px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', width: 'fit-content' }}
+              >
+                Подробнее <span className="service-arrow" style={{ transition: 'transform 0.2s' }}>→</span>
+              </a>
             </motion.div>
           ))}
         </div>

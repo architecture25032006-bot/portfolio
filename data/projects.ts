@@ -75,8 +75,11 @@ export const projects: Project[] = [
     tags: ['Reels', 'Instagram', 'Органика', 'Личный бренд', 'Без рекламы'],
     coverImage: '',
     coverOrientation: 'landscape',
-    galleryImages: [],
-    images: [],
+    galleryImages: [
+      '/images/case-personal-views.jpg',
+      '/images/case-personal-reel.jpg',
+    ],
+    images: ['/images/case-personal-views.jpg'],
     featured: true,
     stats: [
       { value: '121 650', label: 'просмотров' },

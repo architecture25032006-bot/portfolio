@@ -6,7 +6,6 @@ import Projects from '@/components/sections/Projects'
 import Results from '@/components/sections/Results'
 import Contact from '@/components/sections/Contact'
 import Marquee from '@/components/ui/Marquee'
-import BigClaim from '@/components/ui/BigClaim'
 
 export default function Home() {
   return (
@@ -28,10 +27,6 @@ export default function Home() {
         <Projects />
 
         <Results />
-
-        <BigClaim>
-          {'>'} 120.000 просмотров за 14 дней — только органика
-        </BigClaim>
 
         <Marquee
           items={['СТРАТЕГИЯ', 'СЦЕНАРИЙ', 'МОНТАЖ', 'ВОРОНКА', 'ПРОДАЖИ', 'РЕЗУЛЬТАТ']}
