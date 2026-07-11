@@ -26,7 +26,7 @@ export default function Projects() {
       id="projects"
       style={{ background: '#F2F2F2', borderTop: '1px solid #E5E5E5', padding: '80px 40px' }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 
         {/* Заголовок */}
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '40px' }}>
@@ -63,7 +63,7 @@ export default function Projects() {
                 {/* Левая: мета + заголовок + описание + теги */}
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                    <span style={{ fontSize: '12px', color: '#1B6EF3', fontWeight: 500 }}>{project.category}</span>
+                    <span style={{ fontSize: '12px', color: '#8B5CF6', fontWeight: 500 }}>{project.category}</span>
                     <span style={{ color: '#333', fontSize: '12px' }}>·</span>
                     <span style={{ fontSize: '12px', color: '#888' }}>{project.year}</span>
                   </div>
@@ -87,7 +87,7 @@ export default function Projects() {
                   <div className="project-stats-col" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end', flexShrink: 0, marginLeft: '32px' }}>
                     {project.stats.map((s, si) => (
                       <div key={si} style={{ textAlign: 'right' }}>
-                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#1B6EF3', lineHeight: 1 }}>
+                        <div style={{ fontFamily: 'var(--font-heading)', fontSize: '24px', fontWeight: 900, color: '#8B5CF6', lineHeight: 1 }}>
                           <Counter value={s.value} />
                         </div>
                         <div style={{ fontSize: '11px', color: '#AAA', marginTop: '2px' }}>{s.label}</div>
@@ -97,17 +97,22 @@ export default function Projects() {
                 )}
               </div>
 
-              {/* Галерея изображений */}
+              {/* Галерея — горизонтальная лента (прокрутка) */}
               {project.galleryImages && project.galleryImages.length > 0 ? (
                 <div style={{ borderTop: '1px solid #E5E5E5', background: '#fff', padding: '20px 24px' }}>
-                  {/* Сетка: 3 в ряд, портретные */}
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+                    <span style={{ fontSize: '11px', color: '#AAA', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
+                      Пруфы · листай →
+                    </span>
+                  </div>
+                  {/* Лента с горизонтальным скроллом */}
+                  <div className="gallery-strip" style={{ display: 'flex', gap: '12px', overflowX: 'auto', paddingBottom: '6px', scrollSnapType: 'x mandatory' }}>
                     {project.galleryImages.map((src, idx) => (
                       <div
                         key={idx}
                         onClick={() => openLb(project.galleryImages!, idx)}
                         data-cursor="view"
-                        style={{ borderRadius: '10px', overflow: 'hidden', background: '#111', aspectRatio: '9/16', cursor: 'pointer' }}
+                        style={{ flex: '0 0 auto', width: '150px', borderRadius: '10px', overflow: 'hidden', background: '#111', aspectRatio: '9/16', cursor: 'pointer', scrollSnapAlign: 'start' }}
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img

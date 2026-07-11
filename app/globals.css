@@ -2,7 +2,7 @@
 
 @theme {
   --color-bg: #F2F2F2;
-  --color-accent: #1B6EF3;
+  --color-accent: #8B5CF6;
   --color-green: #B4F32B;
   --color-text: #111111;
   --color-muted: #888888;
@@ -38,16 +38,22 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background: #1B6EF3;
+  background: #8B5CF6;
   color: #fff;
 }
 
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: #F2F2F2; }
-::-webkit-scrollbar-thumb { background: #1B6EF3; border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: #8B5CF6; border-radius: 2px; }
 
 /* ── Service card «Подробнее» hover ── */
 .service-more:hover .service-arrow { transform: translateX(4px); }
+
+/* ── Галерея-лента: тонкий скроллбар ── */
+.gallery-strip { scrollbar-width: thin; scrollbar-color: #CCC transparent; }
+.gallery-strip::-webkit-scrollbar { height: 6px; }
+.gallery-strip::-webkit-scrollbar-track { background: transparent; }
+.gallery-strip::-webkit-scrollbar-thumb { background: #CCC; border-radius: 3px; }
 
 /* ── Cover image hover ── */
 .cover-link:hover .cover-overlay {
@@ -94,6 +100,10 @@ html.lenis, html.lenis body { height: auto; }
   }
   .offer-includes {
     grid-template-columns: 1fr !important;
+  }
+  .final-offer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
   }
 }
 

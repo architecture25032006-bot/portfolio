@@ -26,7 +26,7 @@ export default function Offer() {
       id="offer"
       style={{ background: '#F2F2F2', borderTop: '1px solid #E5E5E5', padding: '100px 40px' }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function Offer() {
           transition={{ duration: 0.5, ease }}
           style={{ marginBottom: '64px' }}
         >
-          <p style={{ fontSize: '11px', color: '#1B6EF3', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '10px' }}>
+          <p style={{ fontSize: '11px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '10px' }}>
             Форматы работы
           </p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111', lineHeight: 1.05 }}>
@@ -112,18 +112,18 @@ export default function Offer() {
               overflow: 'hidden',
             }}
           >
-            <div style={{ position: 'absolute', top: '20px', right: '20px', padding: '5px 12px', borderRadius: '999px', background: '#1B6EF3', fontSize: '10px', fontWeight: 700, color: '#fff', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+            <div style={{ position: 'absolute', top: '20px', right: '20px', padding: '5px 12px', borderRadius: '999px', background: '#8B5CF6', fontSize: '10px', fontWeight: 700, color: '#fff', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
               Популярно
             </div>
 
-            <div style={{ display: 'inline-block', padding: '4px 12px', borderRadius: '999px', border: '1px solid #333', fontSize: '10px', color: '#1B6EF3', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '36px', width: 'fit-content', fontWeight: 600 }}>
+            <div style={{ display: 'inline-block', padding: '4px 12px', borderRadius: '999px', border: '1px solid #333', fontSize: '10px', color: '#8B5CF6', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '36px', width: 'fit-content', fontWeight: 600 }}>
               Долгосрок
             </div>
 
             <div style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(3rem, 5vw, 5rem)', fontWeight: 900, color: '#fff', lineHeight: 1, marginBottom: '4px' }}>
               15–20
             </div>
-            <div style={{ fontSize: '18px', fontWeight: 700, color: '#1B6EF3', marginBottom: '24px' }}>
+            <div style={{ fontSize: '18px', fontWeight: 700, color: '#8B5CF6', marginBottom: '24px' }}>
               рилсов в месяц
             </div>
 
@@ -135,7 +135,7 @@ export default function Offer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '40px' }}>
               {longFeatures.map(item => (
                 <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#888' }}>
-                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#1B6EF3', flexShrink: 0 }} />
+                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#8B5CF6', flexShrink: 0 }} />
                   {item}
                 </div>
               ))}
@@ -146,7 +146,7 @@ export default function Offer() {
               target="_blank"
               rel="noopener noreferrer"
               strength={0.4}
-              style={{ padding: '14px 28px', background: '#1B6EF3', color: '#fff', borderRadius: '999px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', textAlign: 'center' as const, boxShadow: '0 8px 32px rgba(27,110,243,0.4)' }}
+              style={{ padding: '14px 28px', background: '#8B5CF6', color: '#fff', borderRadius: '999px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', textAlign: 'center' as const, boxShadow: '0 8px 32px rgba(139,92,246,0.4)' }}
             >
               Начать →
             </MagneticButton>

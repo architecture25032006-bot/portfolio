@@ -48,9 +48,9 @@ export default function Nav() {
         }}
       >
         <div style={{
-          maxWidth: '1400px',
+          maxWidth: '1280px',
           margin: '0 auto',
-          padding: '0 24px',
+          padding: '0 40px',
           height: '64px',
           display: 'flex',
           alignItems: 'center',
@@ -59,7 +59,7 @@ export default function Nav() {
           {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', flexShrink: 0 }}>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="22" height="22" rx="6" fill="#1B6EF3"/>
+              <rect width="22" height="22" rx="6" fill="#8B5CF6"/>
               <path d="M8.5 6.5L16 11L8.5 15.5V6.5Z" fill="white"/>
             </svg>
             <span style={{
@@ -70,7 +70,7 @@ export default function Nav() {
               color: '#111',
               textTransform: 'uppercase',
             }}>
-              Malysh<span style={{ color: '#1B6EF3' }}>Production</span>
+              Malysh<span style={{ color: '#8B5CF6' }}>Production</span>
             </span>
           </Link>
 
@@ -110,7 +110,7 @@ export default function Nav() {
                 whiteSpace: 'nowrap',
               }}
             >
-              Созвон
+              Связаться
             </a>
           </nav>
 

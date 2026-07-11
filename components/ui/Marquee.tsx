@@ -51,7 +51,7 @@ export default function Marquee({
               fontSize: fontSizes[size],
               fontWeight: 900,
               letterSpacing: '-0.02em',
-              color: accent && i % 2 === 1 ? '#1B6EF3' : '#F5F5F5',
+              color: accent && i % 2 === 1 ? '#8B5CF6' : '#F5F5F5',
               whiteSpace: 'nowrap',
               display: 'inline-flex',
               alignItems: 'center',
@@ -59,7 +59,7 @@ export default function Marquee({
             }}
           >
             {item}
-            <span style={{ color: '#1B6EF3', fontSize: '0.7em' }}>●</span>
+            <span style={{ color: '#8B5CF6', fontSize: '0.7em' }}>●</span>
           </span>
         ))}
       </div>

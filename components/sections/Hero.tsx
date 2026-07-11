@@ -7,11 +7,11 @@ const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
 // Ряд мелких bento-карточек под хедером (как в референсе)
 const miniCards = [
-  { label: 'Instagram', sub: 'Reels', bg: '#fff', fg: '#111', icon: '◎', iconColor: '#1B6EF3' },
+  { label: 'Instagram', sub: 'Reels', bg: '#fff', fg: '#111', icon: '◎', iconColor: '#8B5CF6' },
   { label: 'YouTube', sub: 'Shorts', bg: '#111', fg: '#fff', icon: '▶', iconColor: '#B4F32B' },
   { label: 'TikTok', sub: 'вертикаль', bg: '#fff', fg: '#111', icon: '♪', iconColor: '#111' },
   { label: 'Монтаж', sub: 'и субтитры', bg: '#B4F32B', fg: '#111', icon: '✂', iconColor: '#111' },
-  { label: 'Стратегия', sub: 'роста', bg: '#1B6EF3', fg: '#fff', icon: '↗', iconColor: '#fff' },
+  { label: 'Стратегия', sub: 'роста', bg: '#8B5CF6', fg: '#fff', icon: '↗', iconColor: '#fff' },
 ]
 
 export default function Hero() {
@@ -35,7 +35,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, ease, delay: 0.1 }}
-              style={{ fontSize: '12px', color: '#1B6EF3', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '20px' }}
+              style={{ fontSize: '12px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '20px' }}
             >
               MalyshProduction · Reels-продюсинг
             </motion.p>
@@ -43,7 +43,7 @@ export default function Hero() {
             <div style={{ marginBottom: '28px' }}>
               {[
                 <>Делаем Reels,</>,
-                <>которые{' '}<span style={{ color: '#1B6EF3' }}>продают</span></>,
+                <>которые{' '}<span style={{ color: '#8B5CF6' }}>продают</span></>,
               ].map((line, i) => (
                 <div key={i} style={{ overflow: 'hidden' }}>
                   <motion.div
@@ -88,14 +88,14 @@ export default function Hero() {
                 strength={0.4}
                 style={{
                   padding: '15px 32px',
-                  background: '#1B6EF3',
+                  background: '#8B5CF6',
                   color: '#fff',
                   borderRadius: '999px',
                   fontSize: '15px',
                   fontWeight: 700,
                   textDecoration: 'none',
                   whiteSpace: 'nowrap',
-                  boxShadow: '0 8px 28px rgba(27,110,243,0.32)',
+                  boxShadow: '0 8px 28px rgba(139,92,246,0.32)',
                   cursor: 'pointer',
                 }}
               >
@@ -131,30 +131,39 @@ export default function Hero() {
             className="hero-visual"
             style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '420px' }}
           >
-            {/* Reel-фрейм */}
+            {/* Reel-фрейм с фото */}
             <div style={{
               position: 'relative',
-              width: '240px',
-              height: '420px',
+              width: '250px',
+              height: '440px',
               borderRadius: '28px',
-              background: 'linear-gradient(160deg, #1B6EF3 0%, #0d3a8f 100%)',
-              boxShadow: '0 30px 80px rgba(27,110,243,0.35)',
+              boxShadow: '0 30px 80px rgba(139,92,246,0.35)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               overflow: 'hidden',
+              border: '4px solid #fff',
             }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/photo_2026-04-26_16-52-01.jpg"
+                alt="Артём — MalyshProduction"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }}
+              />
+              {/* затемнение для контраста */}
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, transparent 30%, transparent 60%, rgba(0,0,0,0.45) 100%)' }} />
               {/* Play */}
               <div style={{
-                width: '72px', height: '72px', borderRadius: '50%',
+                position: 'relative', zIndex: 2,
+                width: '68px', height: '68px', borderRadius: '50%',
                 background: 'rgba(255,255,255,0.95)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 8px 30px rgba(0,0,0,0.25)',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.35)',
               }}>
-                <div style={{ width: 0, height: 0, borderTop: '13px solid transparent', borderBottom: '13px solid transparent', borderLeft: '22px solid #1B6EF3', marginLeft: '6px' }} />
+                <div style={{ width: 0, height: 0, borderTop: '12px solid transparent', borderBottom: '12px solid transparent', borderLeft: '20px solid #8B5CF6', marginLeft: '5px' }} />
               </div>
               {/* низ — «прогресс» */}
-              <div style={{ position: 'absolute', bottom: '22px', left: '22px', right: '22px', height: '4px', borderRadius: '4px', background: 'rgba(255,255,255,0.3)' }}>
+              <div style={{ position: 'absolute', zIndex: 2, bottom: '22px', left: '22px', right: '22px', height: '4px', borderRadius: '4px', background: 'rgba(255,255,255,0.35)' }}>
                 <div style={{ width: '62%', height: '100%', borderRadius: '4px', background: '#B4F32B' }} />
               </div>
             </div>

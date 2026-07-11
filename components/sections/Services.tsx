@@ -16,13 +16,13 @@ const services = [
     cat: 'Этап 02',
     title: 'Монтаж и субтитры',
     description: 'Ритмичный монтаж, субтитры и динамика, которые держат до конца.',
-    bg: '#fff', fg: '#111', sub: '#888', catColor: '#1B6EF3', link: '#1B6EF3',
+    bg: '#fff', fg: '#111', sub: '#888', catColor: '#8B5CF6', link: '#8B5CF6',
   },
   {
     cat: 'Этап 03',
     title: 'Стратегия роста',
     description: 'Анализ ниши и конкурентов, контент-план, который тянет заявки.',
-    bg: '#1B6EF3', fg: '#fff', sub: 'rgba(255,255,255,0.85)', catColor: '#B4F32B', link: '#fff',
+    bg: '#8B5CF6', fg: '#fff', sub: 'rgba(255,255,255,0.85)', catColor: '#B4F32B', link: '#fff',
   },
   {
     cat: 'Этап 04',

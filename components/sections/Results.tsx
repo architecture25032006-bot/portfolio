@@ -6,9 +6,9 @@ import Counter from '@/components/ui/Counter'
 const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
 const mainStats = [
-  { value: '121 650', label: 'просмотров', sub: 'за 14 дней', accent: '#1B6EF3' },
+  { value: '121 650', label: 'просмотров', sub: 'за 14 дней', accent: '#8B5CF6' },
   { value: '92 769', label: 'охваченных аккаунтов', sub: '+1 656%', accent: '#111' },
-  { value: '98,1%', label: 'новая аудитория', sub: 'холодный охват', accent: '#1B6EF3' },
+  { value: '98,1%', label: 'новая аудитория', sub: 'холодный охват', accent: '#8B5CF6' },
   { value: '100+', label: 'новых подписчиков', sub: 'за 10 дней', accent: '#111' },
 ]
 
@@ -27,7 +27,7 @@ export default function Results() {
           transition={{ duration: 0.5, ease }}
           style={{ marginBottom: '48px' }}
         >
-          <p style={{ fontSize: '11px', color: '#1B6EF3', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '12px' }}>
+          <p style={{ fontSize: '11px', color: '#8B5CF6', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '12px' }}>
             Мой личный кейс
           </p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.4rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111', lineHeight: 1.05 }}>
@@ -60,7 +60,7 @@ export default function Results() {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'clamp(1.6rem, 2.8vw, 2.4rem)',
                 fontWeight: 900,
-                color: i % 2 === 0 ? '#B4F32B' : '#1B6EF3',
+                color: i % 2 === 0 ? '#B4F32B' : '#8B5CF6',
                 lineHeight: 1,
                 marginBottom: '10px',
               }}>
