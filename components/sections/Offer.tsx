@@ -72,8 +72,8 @@ export default function Offer() {
             </div>
 
             <p style={{ color: '#999', fontSize: '14px', lineHeight: 1.75, marginBottom: '32px', flex: 1 }}>
-              Попробуй без риска. Получи 5 готовых рилсов — увидишь
-              механику изнутри до решения о долгосроке.
+              Проверяешь результат без риска. Получаешь 5 готовых рилсов
+              и видишь, как это работает на твоём аккаунте — до долгосрока.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '40px' }}>
@@ -128,8 +128,9 @@ export default function Offer() {
             </div>
 
             <p style={{ color: '#666', fontSize: '14px', lineHeight: 1.75, marginBottom: '32px', flex: 1 }}>
-              Системный рост аккаунта от 3 месяцев. Именно столько
-              нужно алгоритму чтобы начать тебя продвигать стабильно.
+              Получаешь стабильный рост от 3 месяцев: подписчиков, охваты
+              и заявки в системе. Ровно столько нужно алгоритму, чтобы
+              продвигать тебя постоянно.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '40px' }}>

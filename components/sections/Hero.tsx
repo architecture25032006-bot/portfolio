@@ -71,8 +71,8 @@ export default function Hero() {
               transition={{ duration: 0.5, ease, delay: 0.45 }}
               style={{ color: '#777', fontSize: '16px', lineHeight: 1.7, maxWidth: '440px', marginBottom: '36px' }}
             >
-              Reels-продюсер для экспертов и личных брендов. Короткий контент,
-              который приводит клиентов — не просто набирает просмотры.
+              Превращаю короткие видео в поток подписчиков и заявок.
+              Ты получаешь клиентов — а не просмотры, которые ничего не приносят.
             </motion.p>
 
             <motion.div

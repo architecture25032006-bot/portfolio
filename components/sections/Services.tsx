@@ -9,25 +9,25 @@ const services = [
   {
     cat: 'Этап 01',
     title: 'Хуки и сценарии',
-    description: 'Цепляющие хуки под твою нишу. Первые 2 секунды решают всё.',
+    description: 'Твои видео перестают пролистывать. Сильный хук в первые 2 секунды удерживает зрителя — и он досматривает до конца.',
     bg: '#111', fg: '#fff', sub: '#999', catColor: '#B4F32B', link: '#fff',
   },
   {
     cat: 'Этап 02',
     title: 'Монтаж и субтитры',
-    description: 'Ритмичный монтаж, субтитры и динамика, которые держат до конца.',
+    description: 'Выше досмотр — больше показов от алгоритма. Динамичный монтаж и субтитры превращают просмотры в охват.',
     bg: '#fff', fg: '#111', sub: '#888', catColor: '#8B5CF6', link: '#8B5CF6',
   },
   {
     cat: 'Этап 03',
     title: 'Стратегия роста',
-    description: 'Анализ ниши и конкурентов, контент-план, который тянет заявки.',
+    description: 'Контент-план под твою нишу, который стабильно приводит подписчиков и заявки, а не даёт разовые всплески.',
     bg: '#8B5CF6', fg: '#fff', sub: 'rgba(255,255,255,0.85)', catColor: '#B4F32B', link: '#fff',
   },
   {
     cat: 'Этап 04',
     title: 'A/B тест форматов',
-    description: 'Тестирую хуки и форматы параллельно. Данные, а не догадки.',
+    description: 'Оставляю только то, что реально работает на твою аудиторию. Ты растёшь на данных, а не на догадках.',
     bg: '#B4F32B', fg: '#111', sub: '#3a4700', catColor: '#111', link: '#111',
   },
 ]
@@ -50,10 +50,10 @@ export default function Services() {
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '48px', flexWrap: 'wrap', gap: '24px' }}>
           <div style={{ maxWidth: '620px' }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 3.4rem)', fontWeight: 900, letterSpacing: '-0.02em', color: '#111', lineHeight: 1.05, marginBottom: '16px' }}>
-              Что я делаю с твоим контентом
+              Что ты получаешь<br />от работы со мной
             </h2>
             <p style={{ color: '#888', fontSize: '15px', lineHeight: 1.6, maxWidth: '480px' }}>
-              Полный цикл: от идеи и хука до публикации и аналитики. Ты занимаешься бизнесом — я контентом.
+              Ты занимаешься бизнесом — я беру на себя весь путь от хука до заявки. Полный цикл продюсирования под ключ.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
