@@ -37,7 +37,7 @@ export default function Results() {
         </motion.div>
 
         {/* 4 главных стата */}
-        <div className="results-main-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '14px' }}>
+        <div className="results-main-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '14px', alignItems: 'stretch' }}>
           {mainStats.map((s, i) => (
             <motion.div
               key={i}
@@ -46,14 +46,15 @@ export default function Results() {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, ease, delay: i * 0.07 }}
               style={{
-                padding: '36px 28px',
+                padding: '32px 26px',
                 borderRadius: '20px',
                 background: i % 2 === 0 ? '#111' : '#fff',
                 border: i % 2 === 0 ? 'none' : '1px solid #E5E5E5',
-                minHeight: '160px',
+                minHeight: '150px',
+                height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'flex-end',
+                justifyContent: 'flex-start',
               }}
             >
               <div style={{

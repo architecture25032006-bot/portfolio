@@ -18,9 +18,9 @@ const includes = [
 ]
 
 const trust = [
-  { value: '121K', label: 'просмотров за 14 дней' },
-  { value: '92K', label: 'охваченных аккаунтов' },
-  { value: '100+', label: 'подписчиков за 10 дней' },
+  { value: '121K', label: 'просмотров' },
+  { value: '92K', label: 'охват' },
+  { value: '100+', label: 'подписчиков' },
 ]
 
 export default function Contact() {
@@ -37,6 +37,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease }}
+          className="final-offer-card"
           style={{
             borderRadius: '32px',
             background: 'linear-gradient(150deg, #8B5CF6 0%, #4c1d95 100%)',
@@ -49,7 +50,7 @@ export default function Contact() {
           <div style={{ position: 'absolute', top: '-120px', right: '-80px', width: '360px', height: '360px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(180,243,43,0.18) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
           {/* Плашка */}
-          <div style={{
+          <div className="final-offer-badge" style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
             padding: '8px 16px', borderRadius: '999px',
             background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)',
@@ -64,27 +65,27 @@ export default function Contact() {
 
             {/* Левая — питч + CTA */}
             <div>
-              <h2 style={{
+              <h2 className="final-offer-title" style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(2.2rem, 4.8vw, 4.4rem)',
+                fontSize: 'clamp(2rem, 4.8vw, 4.4rem)',
                 fontWeight: 900,
                 letterSpacing: '-0.02em',
                 color: '#fff',
                 lineHeight: 1.0,
-                marginBottom: '22px',
+                marginBottom: '20px',
               }}>
                 Разберу твой блог<br />
-                и покажу<br />
+                и покажу{' '}
                 <span style={{ color: '#B4F32B' }}>точки роста</span>
               </h2>
 
-              <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.6, maxWidth: '480px', marginBottom: '32px' }}>
+              <p className="final-offer-sub" style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.55, maxWidth: '480px', marginBottom: '28px' }}>
                 Смотрю нишу, контент и конкурентов — и даю конкретный план,
                 что делать, чтобы блог начал приводить клиентов. Без воды.
               </p>
 
               {/* Пруф-цифры */}
-              <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', marginBottom: '36px' }}>
+              <div className="final-offer-trust" style={{ display: 'flex', gap: '28px', flexWrap: 'wrap', marginBottom: '32px' }}>
                 {trust.map(t => (
                   <div key={t.label}>
                     <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 900, fontSize: '28px', color: '#B4F32B', lineHeight: 1 }}>{t.value}</div>
@@ -97,13 +98,14 @@ export default function Contact() {
                 href="https://t.me/m/HngAbPHEODZi"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="final-offer-btn"
                 style={{
                   display: 'inline-block',
-                  padding: '20px 48px',
+                  padding: '18px 40px',
                   background: '#B4F32B',
                   color: '#111',
                   borderRadius: '999px',
-                  fontSize: '17px',
+                  fontSize: '16px',
                   fontWeight: 800,
                   textDecoration: 'none',
                   fontFamily: 'var(--font-heading)',
@@ -113,7 +115,7 @@ export default function Contact() {
                 onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
                 onMouseLeave={e => (e.currentTarget.style.transform = 'translateY(0)')}
               >
-                Записаться на разбор блога →
+                Записаться на разбор →
               </a>
               <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.6)', marginTop: '16px' }}>
                 ⚡ Осталось 2 места на этот месяц
@@ -121,7 +123,7 @@ export default function Contact() {
             </div>
 
             {/* Правая — что входит */}
-            <div style={{
+            <div className="final-offer-panel" style={{
               background: 'rgba(255,255,255,0.08)',
               border: '1px solid rgba(255,255,255,0.15)',
               borderRadius: '20px',
@@ -130,7 +132,7 @@ export default function Contact() {
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 700, marginBottom: '20px' }}>
                 Что входит
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div className="final-offer-includes-list" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {includes.map(item => (
                   <div key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '15px', color: '#fff', lineHeight: 1.4 }}>
                     <span style={{ color: '#111', background: '#B4F32B', width: '20px', height: '20px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 900, flexShrink: 0 }}>✓</span>
