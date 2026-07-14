@@ -9,8 +9,8 @@ const links = [
 ]
 
 const socials = [
-  { label: 'Telegram', href: 'https://t.me/ir6eas3' },
-  { label: 'Портфолио TG', href: 'https://t.me/ir6eas3work' },
+  { label: 'Telegram', href: 'https://telegram.dog/ir6eas3' },
+  { label: 'Портфолио TG', href: 'https://telegram.dog/ir6eas3work' },
   { label: 'YouTube', href: 'https://www.youtube.com/@ir6east' },
 ]
 
@@ -73,7 +73,7 @@ export default function Footer() {
           <div>
             <p className="text-[10px] text-[#444] uppercase tracking-widest mb-3">Сотрудничество</p>
             <a
-              href="https://t.me/m/HngAbPHEODZi"
+              href="https://telegram.dog/m/HngAbPHEODZi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-[#6C63FF] text-white text-xs font-semibold rounded-full hover:bg-[#5a52e0] transition-colors"

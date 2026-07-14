@@ -95,7 +95,7 @@ export default function Nav() {
               </button>
             ))}
             <a
-              href="https://t.me/m/HngAbPHEODZi"
+              href="https://telegram.dog/m/HngAbPHEODZi"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -158,7 +158,7 @@ export default function Nav() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25 }}
-              href="https://t.me/m/HngAbPHEODZi"
+              href="https://telegram.dog/m/HngAbPHEODZi"
               target="_blank"
               rel="noopener noreferrer"
               style={{ marginTop: '8px', padding: '16px 36px', background: '#111', color: '#fff', borderRadius: '999px', fontWeight: 700, fontSize: '16px', textDecoration: 'none' }}

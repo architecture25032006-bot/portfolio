@@ -36,7 +36,7 @@ export default function Projects() {
             </h2>
           </div>
           <a
-            href="https://t.me/ir6eas3work"
+            href="https://telegram.dog/ir6eas3work"
             target="_blank"
             rel="noopener noreferrer"
             style={{ fontSize: '14px', color: '#AAA', textDecoration: 'none' }}

@@ -161,7 +161,7 @@ export default function ProjectsHorizontal() {
             Результаты
           </RevealText>
           <a
-            href="https://t.me/ir6eas3work"
+            href="https://telegram.dog/ir6eas3work"
             target="_blank"
             rel="noopener noreferrer"
             style={{

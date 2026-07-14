@@ -33,9 +33,9 @@ const services = [
 ]
 
 const socials = [
-  { label: 'TG', href: 'https://t.me/ir6eas3' },
+  { label: 'TG', href: 'https://telegram.dog/ir6eas3' },
   { label: 'YT', href: 'https://www.youtube.com/@ir6east' },
-  { label: 'IG', href: 'https://t.me/ir6eas3work' },
+  { label: 'IG', href: 'https://telegram.dog/ir6eas3work' },
 ]
 
 export default function Services() {
@@ -103,7 +103,7 @@ export default function Services() {
               </p>
 
               <a
-                href="https://t.me/m/HngAbPHEODZi"
+                href="https://telegram.dog/m/HngAbPHEODZi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="service-more"

@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
 const socials = [
-  { label: 'Telegram', href: 'https://t.me/ir6eas3' },
-  { label: 'Портфолио TG', href: 'https://t.me/ir6eas3work' },
+  { label: 'Telegram', href: 'https://telegram.dog/ir6eas3' },
+  { label: 'Портфолио TG', href: 'https://telegram.dog/ir6eas3work' },
   { label: 'YouTube', href: 'https://www.youtube.com/@ir6east' },
 ]
 
@@ -95,7 +95,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="https://t.me/m/HngAbPHEODZi"
+                href="https://telegram.dog/m/HngAbPHEODZi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="final-offer-btn"

@@ -86,7 +86,7 @@ export default function Offer() {
             </div>
 
             <MagneticButton
-              href="https://t.me/m/HngAbPHEODZi"
+              href="https://telegram.dog/m/HngAbPHEODZi"
               target="_blank"
               rel="noopener noreferrer"
               strength={0.3}
@@ -143,7 +143,7 @@ export default function Offer() {
             </div>
 
             <MagneticButton
-              href="https://t.me/m/HngAbPHEODZi"
+              href="https://telegram.dog/m/HngAbPHEODZi"
               target="_blank"
               rel="noopener noreferrer"
               strength={0.4}

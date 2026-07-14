@@ -82,7 +82,7 @@ export default function Hero() {
               style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}
             >
               <MagneticButton
-                href="https://t.me/m/HngAbPHEODZi"
+                href="https://telegram.dog/m/HngAbPHEODZi"
                 target="_blank"
                 rel="noopener noreferrer"
                 strength={0.4}
@@ -102,7 +102,7 @@ export default function Hero() {
                 Смотреть кейсы →
               </MagneticButton>
               <MagneticButton
-                href="https://t.me/ir6eas3work"
+                href="https://telegram.dog/ir6eas3work"
                 target="_blank"
                 rel="noopener noreferrer"
                 strength={0.3}
