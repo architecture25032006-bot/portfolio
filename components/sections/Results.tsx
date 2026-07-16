@@ -45,6 +45,7 @@ export default function Results() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, ease, delay: i * 0.07 }}
+              className="card-lift"
               style={{
                 padding: '32px 26px',
                 borderRadius: '20px',

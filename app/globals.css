@@ -46,6 +46,16 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track { background: #F2F2F2; }
 ::-webkit-scrollbar-thumb { background: #8B5CF6; border-radius: 2px; }
 
+/* ── Hover-подъём карточек ── */
+.card-lift {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(17, 17, 17, 0.12);
+}
+
 /* ── Service card «Подробнее» hover ── */
 .service-more:hover .service-arrow { transform: translateX(4px); }
 

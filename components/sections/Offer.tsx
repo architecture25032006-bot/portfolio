@@ -51,6 +51,7 @@ export default function Offer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.5, ease }}
+            className="card-lift"
             style={{
               padding: '48px',
               borderRadius: '20px',
@@ -102,6 +103,7 @@ export default function Offer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.5, ease, delay: 0.1 }}
+            className="card-lift"
             style={{
               padding: '48px',
               borderRadius: '20px',
