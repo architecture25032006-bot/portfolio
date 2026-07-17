@@ -8,6 +8,7 @@ const navLinks = [
   { href: '#offer', label: 'Пакеты' },
   { href: '#services', label: 'Услуги' },
   { href: '#projects', label: 'Кейсы' },
+  { href: '#faq', label: 'Вопросы' },
   { href: '#contact', label: 'Контакт' },
 ]
 

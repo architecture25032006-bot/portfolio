@@ -162,40 +162,36 @@ export default function Hero() {
             className="hero-visual"
             style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '420px' }}
           >
-            {/* Reel-фрейм с фото */}
+            {/* Reel-фрейм с живым видео */}
             <div style={{
               position: 'relative',
               width: '250px',
               height: '440px',
               borderRadius: '28px',
               boxShadow: '0 30px 80px rgba(139,92,246,0.35)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
               overflow: 'hidden',
               border: '4px solid #fff',
+              background: '#111',
             }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/photo_2026-04-26_16-52-01.jpg"
-                alt="Артём — MalyshProduction"
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }}
+              <video
+                src="/reel.mp4"
+                poster="/reel-poster.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
-              {/* затемнение для контраста */}
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, transparent 30%, transparent 60%, rgba(0,0,0,0.45) 100%)' }} />
-              {/* Play */}
+              {/* тонкий бейдж «в эфире» */}
               <div style={{
-                position: 'relative', zIndex: 2,
-                width: '68px', height: '68px', borderRadius: '50%',
-                background: 'rgba(255,255,255,0.95)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 8px 30px rgba(0,0,0,0.35)',
+                position: 'absolute', zIndex: 2, top: '14px', left: '14px',
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+                padding: '4px 10px', borderRadius: '999px',
+                background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(6px)',
               }}>
-                <div style={{ width: 0, height: 0, borderTop: '12px solid transparent', borderBottom: '12px solid transparent', borderLeft: '20px solid #8B5CF6', marginLeft: '5px' }} />
-              </div>
-              {/* низ — «прогресс» */}
-              <div style={{ position: 'absolute', zIndex: 2, bottom: '22px', left: '22px', right: '22px', height: '4px', borderRadius: '4px', background: 'rgba(255,255,255,0.35)' }}>
-                <div style={{ width: '62%', height: '100%', borderRadius: '4px', background: '#B4F32B' }} />
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#B4F32B', display: 'inline-block', boxShadow: '0 0 8px #B4F32B' }} />
+                <span style={{ fontSize: '10px', color: '#fff', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase' }}>Reels</span>
               </div>
             </div>
 

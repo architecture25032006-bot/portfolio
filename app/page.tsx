@@ -2,8 +2,10 @@ import Nav from '@/components/ui/Nav'
 import Hero from '@/components/sections/Hero'
 import Offer from '@/components/sections/Offer'
 import Services from '@/components/sections/Services'
+import Process from '@/components/sections/Process'
 import Projects from '@/components/sections/Projects'
 import Results from '@/components/sections/Results'
+import FAQ from '@/components/sections/FAQ'
 import Contact from '@/components/sections/Contact'
 import Marquee from '@/components/ui/Marquee'
 
@@ -24,9 +26,13 @@ export default function Home() {
 
         <Services />
 
+        <Process />
+
         <Projects />
 
         <Results />
+
+        <FAQ />
 
         <Marquee
           items={['СТРАТЕГИЯ', 'СЦЕНАРИЙ', 'МОНТАЖ', 'ВОРОНКА', 'ПРОДАЖИ', 'РЕЗУЛЬТАТ']}

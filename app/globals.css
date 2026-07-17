@@ -167,6 +167,18 @@ html.lenis, html.lenis body { height: auto; }
   }
 }
 
+/* ── «Как проходит работа» responsive ── */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 520px) {
+  .process-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* ── Results responsive ── */
 @media (max-width: 768px) {
   .results-main-grid {

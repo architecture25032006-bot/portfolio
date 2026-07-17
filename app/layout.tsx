@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Unbounded, Manrope } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/next'
 import SmoothScroll from '@/components/providers/SmoothScroll'
 import GridOverlay from '@/components/ui/GridOverlay'
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <GridOverlay />
           {children}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   )
