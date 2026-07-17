@@ -46,6 +46,24 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track { background: #F2F2F2; }
 ::-webkit-scrollbar-thumb { background: #8B5CF6; border-radius: 2px; }
 
+/* ── Доступность: видимый фокус с клавиатуры ── */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #8B5CF6;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ── Доступность: уважение к reduced-motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ── Hover-подъём карточек ── */
 .card-lift {
   transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1);

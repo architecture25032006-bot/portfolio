@@ -18,8 +18,8 @@ const includes = [
 ]
 
 const trust = [
-  { value: '121K', label: 'просмотров' },
-  { value: '92K', label: 'охват' },
+  { value: '166K', label: 'просмотров' },
+  { value: '124K', label: 'охват' },
   { value: '100+', label: 'подписчиков' },
 ]
 

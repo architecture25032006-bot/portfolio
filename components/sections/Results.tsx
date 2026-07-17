@@ -6,9 +6,9 @@ import Counter from '@/components/ui/Counter'
 const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
 const mainStats = [
-  { value: '121 650', label: 'просмотров', sub: 'за 14 дней', accent: '#8B5CF6' },
-  { value: '92 769', label: 'охваченных аккаунтов', sub: '+1 656%', accent: '#111' },
-  { value: '98,1%', label: 'новая аудитория', sub: 'холодный охват', accent: '#8B5CF6' },
+  { value: '166 389', label: 'просмотров', sub: 'за 14 дней', accent: '#8B5CF6' },
+  { value: '123 855', label: 'охваченных аккаунтов', sub: '+1 934%', accent: '#111' },
+  { value: '98,6%', label: 'новая аудитория', sub: 'холодный охват', accent: '#8B5CF6' },
   { value: '100+', label: 'новых подписчиков', sub: 'за 10 дней', accent: '#111' },
 ]
 

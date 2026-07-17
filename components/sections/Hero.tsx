@@ -237,7 +237,7 @@ export default function Hero() {
                 boxShadow: '0 10px 30px rgba(180,243,43,0.4)',
               }}
             >
-              <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 900, fontSize: '16px', color: '#111' }}>▲ +1 656%</div>
+              <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 900, fontSize: '16px', color: '#111' }}>▲ +1 934%</div>
             </motion.div>
           </motion.div>
         </div>

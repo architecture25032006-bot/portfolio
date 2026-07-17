@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
-import { Montserrat, Manrope } from 'next/font/google'
+import { Unbounded, Manrope } from 'next/font/google'
 import './globals.css'
 import SmoothScroll from '@/components/providers/SmoothScroll'
 import GridOverlay from '@/components/ui/GridOverlay'
 
-// Заголовки — тяжёлый, impactful
-const montserrat = Montserrat({
+// Заголовки — характерный дисплейный гротеск с индивидуальностью
+const unbounded = Unbounded({
   subsets: ['latin', 'cyrillic'],
   variable: '--font-heading',
-  weight: ['700', '800', '900'],
+  weight: ['600', '700', '800', '900'],
   display: 'swap',
 })
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru" className={`${montserrat.variable} ${manrope.variable}`}>
+    <html lang="ru" className={`${unbounded.variable} ${manrope.variable}`}>
       <body className="bg-[#F2F2F2] text-[#111111] antialiased overflow-x-hidden">
         <SmoothScroll>
           <GridOverlay />
